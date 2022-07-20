@@ -1,0 +1,19 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-minitest
+  - rubocop-performance
+  - standard
+
+inherit_from:
+  - .rubocop/minitest.yml
+  - .rubocop/strict.yml
+
+inherit_gem:
+  prettier: rubocop.yml
+  standard: config/base.yml
+
+AllCops:
+  NewCops: enable

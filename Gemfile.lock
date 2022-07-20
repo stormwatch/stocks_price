@@ -1,0 +1,129 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    ast (2.4.2)
+    awesome_print (1.9.2)
+    backport (1.2.0)
+    benchmark (0.2.0)
+    builder (3.2.4)
+    byebug (11.1.3)
+    coderay (1.1.3)
+    diff-lcs (1.5.0)
+    e2mmap (0.1.0)
+    haml (5.2.2)
+      temple (>= 0.8.0)
+      tilt
+    jaro_winkler (1.5.4)
+    kramdown (2.4.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    method_source (1.0.0)
+    mini_portile2 (2.8.0)
+    minitest (5.16.2)
+    minitest-reporters (1.5.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    nokogiri (1.13.7)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    parallel (1.22.1)
+    parser (3.1.2.0)
+      ast (~> 2.4.1)
+    prettier (3.1.2)
+      syntax_tree (>= 2.3.1)
+      syntax_tree-haml (>= 1.1.0)
+      syntax_tree-rbs (>= 0.2.0)
+    prettier_print (0.1.0)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    racc (1.6.0)
+    rainbow (3.1.1)
+    rake (13.0.6)
+    rbs (2.6.0)
+    regexp_parser (2.5.0)
+    reverse_markdown (2.1.1)
+      nokogiri
+    rexml (3.2.5)
+    rubocop (1.29.1)
+      parallel (~> 1.10)
+      parser (>= 3.1.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.17.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.19.1)
+      parser (>= 3.1.1.0)
+    rubocop-minitest (0.20.1)
+      rubocop (>= 0.90, < 2.0)
+    rubocop-performance (1.13.3)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    ruby-progressbar (1.11.0)
+    seeing_is_believing (0.0.23)
+    solargraph (0.45.0)
+      backport (~> 1.2)
+      benchmark
+      bundler (>= 1.17.2)
+      diff-lcs (~> 1.4)
+      e2mmap
+      jaro_winkler (~> 1.5)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      parser (~> 3.0)
+      reverse_markdown (>= 1.0.5, < 3)
+      rubocop (>= 0.52)
+      thor (~> 1.0)
+      tilt (~> 2.0)
+      yard (~> 0.9, >= 0.9.24)
+    standard (1.12.1)
+      rubocop (= 1.29.1)
+      rubocop-performance (= 1.13.3)
+    syntax_tree (3.1.0)
+      prettier_print
+    syntax_tree-haml (1.2.0)
+      haml (>= 5.2)
+      prettier_print
+      syntax_tree (>= 2.0.1)
+    syntax_tree-rbs (0.5.0)
+      prettier_print
+      rbs
+      syntax_tree (>= 2.0.1)
+    temple (0.8.2)
+    thor (1.2.1)
+    tilt (2.0.10)
+    unicode-display_width (2.2.0)
+    webrick (1.7.0)
+    yard (0.9.28)
+      webrick (~> 1.7.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  awesome_print
+  minitest
+  minitest-reporters
+  prettier
+  pry-byebug
+  rake
+  rubocop-minitest
+  rubocop-performance
+  seeing_is_believing
+  solargraph
+  standard (~> 1.0)
+
+RUBY VERSION
+   ruby 3.2.0p-1
+
+BUNDLED WITH
+   2.3.8

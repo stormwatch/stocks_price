@@ -1,0 +1,28 @@
+#+title: Stock Prices
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 27.2 (Org mode 9.4.6)
+
+* Original problem statement
+Suppose we could access yesterday's stock prices as an array for stock `Apple`, where:
+  - The indices are the time in minutes past trade opening time, which was 9:30am local time
+  - The values are the price in dollars of the stock at that time.
+
+So if the stock costs $500 at 10:30am, ~stock_prices[60] == 500~.
+
+Write an efficient method that takes stock_prices and returns the best profit I
+could have made from 1 purchase and 1 sell of the stock yesterday.
+
+For example:
+
+#+begin_src ruby :results none
+stock_prices = [10, 7, 5, 8, 11, 9]
+get_max_profit(stock_prices)
+#+end_src
+
+Should return ($6), and you should buy for ($5) at (3rd) min and sell for ($11)
+at (5th) min
+
+No "shorting" — you must buy before you sell. You may not buy and sell at the
+same time (at least 1 minute must pass).
