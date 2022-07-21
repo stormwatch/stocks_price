@@ -12,4 +12,13 @@ class StockTest < Minitest::Test
     max_profit = get_max_profit stock_prices
     assert_predicate max_profit, :zero?
   end
+
+  def test_profit_when_the_minimum_precedes_the_maximum_is_their_difference
+    stock_prices = [5, 2, 3, 3, 7, 4]
+    difference = stock_prices.max - stock_prices.min
+
+    profit = get_max_profit(stock_prices)
+
+    assert_equal difference, profit
+  end
 end
