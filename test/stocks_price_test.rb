@@ -21,4 +21,11 @@ class StockTest < Minitest::Test
 
     assert_equal expected, get_max_profit(stock_prices)
   end
+
+  def test_ignore_maxima_that_precedes_the_minimum
+    stock_prices = [9, 1, 4]
+    expected = 4 - 1
+
+    assert_equal expected, get_max_profit(stock_prices)
+  end
 end
