@@ -1,5 +1,5 @@
-def get_max_profit(an_array_of_numbers)
-  raise("Priceless stock!") if an_array_of_numbers.empty?
+def get_max_profit(numbers)
+  raise("Priceless stock!") if numbers.empty?
 
-  an_array_of_numbers.max - an_array_of_numbers.min
+  numbers.max - numbers.min
 end
