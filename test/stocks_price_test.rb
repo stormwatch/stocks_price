@@ -28,4 +28,11 @@ class StockTest < Minitest::Test
 
     assert_equal expected, get_max_profit(stock_prices)
   end
+
+  def test_picks_the_largest_profit
+    stock_prices = [ 9, 36, 4, 25, 1, 16]
+    expected = 36 - 9
+
+    assert_equal expected, get_max_profit(stock_prices)
+  end
 end
