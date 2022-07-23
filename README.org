@@ -33,3 +33,7 @@ at (5th) min
 
 No "shorting" — you must buy before you sell. You may not buy and sell at the
 same time (at least 1 minute must pass).
+
+* Modifications
+I am omitting the original required return value. For the time being I only care
+about returning the number associated with the profit.
