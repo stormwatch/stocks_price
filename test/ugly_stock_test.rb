@@ -26,4 +26,11 @@ class UglyStockTest < Minitest::Test
     error = assert_raises(RuntimeError) { ugly_best_profit prices }
     assert_equal "A stock price cannot be negative.", error.message
   end
+
+  def test_calculate_profit_of_single_price_should_raise_error
+    price = [1]
+
+    error = assert_raises(RuntimeError) { ugly_best_profit price }
+    assert_equal "Single-priced stock. Please, provide at least two prices.", error.message
+  end
 end
