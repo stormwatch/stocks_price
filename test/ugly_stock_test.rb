@@ -13,4 +13,10 @@ class UglyStockTest < Minitest::Test
 
     assert_equal 1 - 4 , ugly_best_profit(prices)
   end
+
+  def test_calculates_best_of_many_profits_correctly
+    prices = [16, 25, 4, 9, 1]
+
+    assert_equal 25 - 16, ugly_best_profit(prices)
+  end
 end
