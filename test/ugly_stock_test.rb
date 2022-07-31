@@ -19,4 +19,11 @@ class UglyStockTest < Minitest::Test
 
     assert_equal 25 - 16, ugly_best_profit(prices)
   end
+
+  def test_calculate_profit_with_negative_prices_should_raise_error
+    prices = [-1, -4]
+
+    error = assert_raises(RuntimeError) { ugly_best_profit prices }
+    assert_equal "A stock price cannot be negative.", error.message
+  end
 end
