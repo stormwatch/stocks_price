@@ -7,4 +7,10 @@ class UglyStockTest < Minitest::Test
 
     assert_predicate ugly_best_profit(prices), :zero?
   end
+
+  def test_calculates_single_profit_correctly
+    prices = [4, 1]
+
+    assert_equal 1 - 4 , ugly_best_profit(prices)
+  end
 end

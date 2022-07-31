@@ -1,3 +1,3 @@
 def ugly_best_profit(prices)
-  0
+  prices.last - prices.first
 end
