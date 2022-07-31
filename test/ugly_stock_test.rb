@@ -33,4 +33,11 @@ class UglyStockTest < Minitest::Test
     error = assert_raises(RuntimeError) { ugly_best_profit price }
     assert_equal "Single-priced stock. Please, provide at least two prices.", error.message
   end
+
+  def test_calculate_profit_without_prices_should_raise_error
+    no_price = []
+
+    error = assert_raises(RuntimeError) { ugly_best_profit no_price}
+    assert_equal "Priceless stock! Please, provide at least to prices", error.message
+  end
 end
