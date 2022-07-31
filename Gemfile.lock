@@ -11,10 +11,8 @@ GEM
     coderay (1.1.3)
     diff-lcs (1.5.0)
     e2mmap (0.1.0)
-    haml (5.2.2)
-      temple (>= 0.8.0)
-      tilt
     jaro_winkler (1.5.4)
+    json (2.6.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -27,16 +25,12 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
-    nokogiri (1.13.7)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.0)
       ast (~> 2.4.1)
-    prettier (3.1.2)
-      syntax_tree (>= 2.3.1)
-      syntax_tree-haml (>= 1.1.0)
-      syntax_tree-rbs (>= 0.2.0)
     prettier_print (0.1.0)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -47,25 +41,25 @@ GEM
     racc (1.6.0)
     rainbow (3.1.1)
     rake (13.0.6)
-    rbs (2.6.0)
     regexp_parser (2.5.0)
     reverse_markdown (2.1.1)
       nokogiri
     rexml (3.2.5)
-    rubocop (1.29.1)
+    rubocop (1.32.0)
+      json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.17.0, < 2.0)
+      rubocop-ast (>= 1.19.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.19.1)
       parser (>= 3.1.1.0)
-    rubocop-minitest (0.20.1)
+    rubocop-minitest (0.21.0)
       rubocop (>= 0.90, < 2.0)
-    rubocop-performance (1.13.3)
+    rubocop-performance (1.14.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
@@ -85,22 +79,13 @@ GEM
       thor (~> 1.0)
       tilt (~> 2.0)
       yard (~> 0.9, >= 0.9.24)
-    standard (1.12.1)
-      rubocop (= 1.29.1)
-      rubocop-performance (= 1.13.3)
-    syntax_tree (3.1.0)
+    standard (1.14.0)
+      rubocop (= 1.32.0)
+      rubocop-performance (= 1.14.3)
+    syntax_tree (3.2.1)
       prettier_print
-    syntax_tree-haml (1.2.0)
-      haml (>= 5.2)
-      prettier_print
-      syntax_tree (>= 2.0.1)
-    syntax_tree-rbs (0.5.0)
-      prettier_print
-      rbs
-      syntax_tree (>= 2.0.1)
-    temple (0.8.2)
     thor (1.2.1)
-    tilt (2.0.10)
+    tilt (2.0.11)
     unicode-display_width (2.2.0)
     webrick (1.7.0)
     yard (0.9.28)
@@ -113,7 +98,6 @@ DEPENDENCIES
   awesome_print
   minitest
   minitest-reporters
-  prettier
   pry-byebug
   rake
   rubocop-minitest
@@ -121,6 +105,7 @@ DEPENDENCIES
   seeing_is_believing
   solargraph
   standard (~> 1.0)
+  syntax_tree
 
 RUBY VERSION
    ruby 3.2.0p-1
